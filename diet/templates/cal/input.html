@@ -1,8 +1,9 @@
 {% extends 'basic.html' %}
 
 {% block content %}
+<h1 style=" margin: 5;padding: 0 0 26px; text-align: center; font-family:sans-serif;">Calorie</h1>
+<div class="f">
 
-<h1>Calorie</h1>
 <form action="calc" method="POST">
     {% csrf_token %}
 
