@@ -1,0 +1,16 @@
+{% extends 'basic.html' %}
+
+{% block content %}
+
+<h1>Calorie</h1>
+<form action="calc" method="POST">
+    {% csrf_token %}
+
+    Enter weight in kg: <input type="text" name="weight"><br><br>
+	Enter height in cm: <input type="text" name="height"><br><br>
+	Enter age: <input type="text" name="age"><br><br>
+	Enter gender M/F?: <input type="text" name="gender"><br><br>
+	Gain/Lose/Maintain weight?:<input type="text" name="goal"><br><br>
+	<input type="submit">
+</form>
+{% endblock %}
